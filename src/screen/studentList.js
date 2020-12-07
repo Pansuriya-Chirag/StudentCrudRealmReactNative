@@ -38,7 +38,7 @@ const studentList = (props) => {
     }
 
     return (
-        <View style={{ padding: 20 }}>
+        <View style={{ padding: 20,flex:1 }}>
             <TouchableOpacity
                 style={styles.submitButton}
                 onPress={() => props.navigation.navigate('StudentForm', { onAddStudent: (student) => onAddStudent(student), editAble: false })}>
